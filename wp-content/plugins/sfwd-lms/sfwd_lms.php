@@ -1,17 +1,17 @@
 <?php
 /**
  * @package LearnDash
- * @version 2.0.6.3 0
+ * @version 2.0.6.4 0
  */
 /*
 Plugin Name: LearnDash LMS
 Plugin URI: http://www.learndash.com
 Description: LearnDash LMS Plugin - Turn your WordPress site into a learning management system.
-Version: 2.0.6.3
+Version: 2.0.6.4
 Author: LearnDash
 Author URI: http://www.learndash.com
 */
-define("LEARNDASH_VERSION", "2.0.6.3");
+define("LEARNDASH_VERSION", "2.0.6.4");
 require_once(dirname(__FILE__).'/sfwd_cpt.php');
 require_once(dirname(__FILE__).'/course_progress.php');
 require_once(dirname(__FILE__).'/course_list_shortcode.php');
@@ -44,7 +44,7 @@ add_action("admin_enqueue_scripts", "learndash_load_resources");
 function sfwd_lms_has_access( $post_id, $user_id = null, &$reason = null ) {
 
 	if(empty($user_id))
-	    $user_id = get_current_user_id();
+	$user_id = get_current_user_id();
 	
 	if ( user_can( $user_id, 'manage_options' ) ) 
 		return true;
@@ -70,7 +70,7 @@ function sfwd_lms_has_access( $post_id, $user_id = null, &$reason = null ) {
 
 	if(@$meta['sfwd-courses_course_price_type'] == "open" || @$meta['sfwd-courses_course_price_type'] == "paynow" && empty($meta['sfwd-courses_course_join']) && empty($meta['sfwd-courses_course_price']))
 		return true;
-
+	
     if (( $post_type == 'sfwd-lessons' )  || ( $post_type == 'sfwd-topic' ) || ( $post_type == 'sfwd-courses' )) {
         // Check BOT
         $agent = strtolower($_SERVER['HTTP_USER_AGENT']);
@@ -108,8 +108,8 @@ function sfwd_lms_has_access( $post_id, $user_id = null, &$reason = null ) {
         }
     }
 	
-    if(empty($user_id))
-	return false;
+	if(empty($user_id))
+		return false;
 
     if (@$meta['sfwd-courses_course_test_assignment'] != get_user_meta($user_id, 'test_choice', true)) {
         if ($reason != null)
@@ -128,10 +128,10 @@ function sfwd_lms_has_access( $post_id, $user_id = null, &$reason = null ) {
         return true;
     }
 
-    if ( !empty( $meta['sfwd-courses_course_access_list'] ) ) 
-        $course_access_list = explode( ',', $meta['sfwd-courses_course_access_list'] );
-    else 
-        $course_access_list = array();
+	if ( !empty( $meta['sfwd-courses_course_access_list'] ) ) 
+		$course_access_list = explode( ',', $meta['sfwd-courses_course_access_list'] );
+	else 
+		$course_access_list = array();
 		
 	if(in_array( $user_id, $course_access_list )  || learndash_user_group_enrolled_to_course($user_id, $course_id)) {
 		$expired = ld_course_access_expired($course_id, $user_id);
@@ -347,7 +347,7 @@ if ( !class_exists( 'SFWD_LMS' ) ) {
 					}
 				}
 			}
-
+			
                           $wppro_categorymapper = new WpProQuiz_Model_CategoryMapper();
 			  $wppro_categories = $wppro_categorymapper->fetchAll();
                           $lesson_categories = array();

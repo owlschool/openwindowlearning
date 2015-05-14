@@ -8,7 +8,7 @@
 	//vars
 	global $wpdb;
 	if(isset($_REQUEST['s']))
-		$s = $_REQUEST['s'];
+		$s = trim($_REQUEST['s']);
 	else
 		$s = "";
 	
@@ -39,7 +39,9 @@
 				<?php
 					}
 				?>
-				<option value="oldmembers" <?php if($l == "oldmembers") { ?>selected="selected"<?php } ?>><?php _e('Old Members', 'pmpro');?></option>
+				<option value="cancelled" <?php if($l == "cancelled") { ?>selected="selected"<?php } ?>><?php _e('Cancelled Members', 'pmpro');?></option>
+				<option value="expired" <?php if($l == "expired") { ?>selected="selected"<?php } ?>><?php _e('Expired Members', 'pmpro');?></option>
+				<option value="oldmembers" <?php if($l == "oldmembers") { ?>selected="selected"<?php } ?>><?php _e('Old Members', 'pmpro');?></option>				
 			</select>			
 		</li>
 	</ul>
@@ -52,12 +54,12 @@
 	<?php 
 		//some vars for the search
 		if(isset($_REQUEST['pn']))
-			$pn = $_REQUEST['pn'];
+			$pn = intval($_REQUEST['pn']);
 		else
 			$pn = 1;
 			
 		if(isset($_REQUEST['limit']))
-			$limit = $_REQUEST['limit'];
+			$limit = intval($_REQUEST['limit']);
 		else
 			$limit = 15;
 		
@@ -68,21 +70,25 @@
 		{
 			$sqlQuery = "SELECT SQL_CALC_FOUND_ROWS u.ID, u.user_login, u.user_email, UNIX_TIMESTAMP(u.user_registered) as joindate, mu.membership_id, mu.initial_payment, mu.billing_amount, mu.cycle_period, mu.cycle_number, mu.billing_limit, mu.trial_amount, mu.trial_limit, UNIX_TIMESTAMP(mu.startdate) as startdate, UNIX_TIMESTAMP(mu.enddate) as enddate, m.name as membership FROM $wpdb->users u LEFT JOIN $wpdb->usermeta um ON u.ID = um.user_id LEFT JOIN $wpdb->pmpro_memberships_users mu ON u.ID = mu.user_id LEFT JOIN $wpdb->pmpro_membership_levels m ON mu.membership_id = m.id ";
 			
-			if($l == "oldmembers")
+			if($l == "oldmembers" || $l == "expired" || $l == "cancelled")
 				$sqlQuery .= " LEFT JOIN $wpdb->pmpro_memberships_users mu2 ON u.ID = mu2.user_id AND mu2.status = 'active' ";
 			
-			$sqlQuery .= " WHERE mu.membership_id > 0 AND (u.user_login LIKE '%$s%' OR u.user_email LIKE '%$s%' OR um.meta_value LIKE '%$s%') ";				
+			$sqlQuery .= " WHERE mu.membership_id > 0 AND (u.user_login LIKE '%" . esc_sql($s) . "%' OR u.user_email LIKE '%" . esc_sql($s) . "%' OR um.meta_value LIKE '%" . esc_sql($s) . "%') ";				
 		
 			if($l == "oldmembers")
-				$sqlQuery .= " AND mu.status = 'inactive' AND mu2.status IS NULL ";
+				$sqlQuery .= " AND mu.status <> 'active' AND mu2.status IS NULL ";
+			elseif($l == "expired")
+				$sqlQuery .= " AND mu.status = 'expired' AND mu2.status IS NULL ";
+			elseif($l == "cancelled")
+				$sqlQuery .= " AND mu.status IN('cancelled', 'admin_cancelled') AND mu2.status IS NULL ";
 			elseif($l)
-				$sqlQuery .= " AND mu.status = 'active' AND mu.membership_id = '" . $l . "' ";					
+				$sqlQuery .= " AND mu.status = 'active' AND mu.membership_id = '" . esc_sql($l) . "' ";					
 			else
 				$sqlQuery .= " AND mu.status = 'active' ";			
 			
 			$sqlQuery .= "GROUP BY u.ID ";
 			
-			if($l == "oldmembers")
+			if($l == "oldmembers" || $l == "expired" || $l == "cancelled")
 				$sqlQuery .= "ORDER BY enddate DESC ";
 			else
 				$sqlQuery .= "ORDER BY u.user_registered DESC ";
@@ -93,27 +99,31 @@
 		{
 			$sqlQuery = "SELECT SQL_CALC_FOUND_ROWS u.ID, u.user_login, u.user_email, UNIX_TIMESTAMP(u.user_registered) as joindate, mu.membership_id, mu.initial_payment, mu.billing_amount, mu.cycle_period, mu.cycle_number, mu.billing_limit, mu.trial_amount, mu.trial_limit, UNIX_TIMESTAMP(mu.startdate) as startdate, UNIX_TIMESTAMP(mu.enddate) as enddate, m.name as membership FROM $wpdb->users u LEFT JOIN $wpdb->pmpro_memberships_users mu ON u.ID = mu.user_id LEFT JOIN $wpdb->pmpro_membership_levels m ON mu.membership_id = m.id";
 			
-			if($l == "oldmembers")
+			if($l == "oldmembers" || $l == "expired" || $l == "cancelled")
 				$sqlQuery .= " LEFT JOIN $wpdb->pmpro_memberships_users mu2 ON u.ID = mu2.user_id AND mu2.status = 'active' ";
 			
 			$sqlQuery .= " WHERE mu.membership_id > 0  ";
 			
 			if($l == "oldmembers")
-				$sqlQuery .= " AND mu.status = 'inactive' AND mu2.status IS NULL ";
+				$sqlQuery .= " AND mu.status <> 'active' AND mu2.status IS NULL ";
+			elseif($l == "expired")
+				$sqlQuery .= " AND mu.status = 'expired' AND mu2.status IS NULL ";
+			elseif($l == "cancelled")
+				$sqlQuery .= " AND mu.status IN('cancelled', 'admin_cancelled') AND mu2.status IS NULL ";
 			elseif($l)
-				$sqlQuery .= " AND mu.status = 'active' AND mu.membership_id = '" . $l . "' ";
+				$sqlQuery .= " AND mu.status = 'active' AND mu.membership_id = '" . esc_sql($l) . "' ";
 			else
 				$sqlQuery .= " AND mu.status = 'active' ";
 			$sqlQuery .= "GROUP BY u.ID ";
 						
-			if($l == "oldmembers")
+			if($l == "oldmembers" || $l == "expired" || $l == "cancelled")
 				$sqlQuery .= "ORDER BY enddate DESC ";
 			else
 				$sqlQuery .= "ORDER BY u.user_registered DESC ";
 			
 			$sqlQuery .= "LIMIT $start, $limit";
 		}
-
+		
 		$sqlQuery = apply_filters("pmpro_members_list_sql", $sqlQuery);
 				
 		$theusers = $wpdb->get_results($sqlQuery);
@@ -171,7 +181,7 @@
 					?>
 						<tr <?php if($count++ % 2 == 0) { ?>class="alternate"<?php } ?>>
 							<td><?php echo $theuser->ID?></td>
-							<td>
+							<td class="username column-username">
 								<?php echo get_avatar($theuser->ID, 32)?>
 								<strong>
 									<?php
@@ -180,6 +190,24 @@
 										echo $userlink;
 									?>									
 								</strong>
+								<br />								
+								<?php
+									// Set up the hover actions for this user										
+									$actions = apply_filters( 'pmpro_memberslist_user_row_actions', array(), $theuser );
+									$action_count = count( $actions );
+									$i = 0;
+									if($action_count)
+									{
+										$out = '<div class="row-actions">';
+										foreach ( $actions as $action => $link ) {
+											++$i;
+											( $i == $action_count ) ? $sep = '' : $sep = ' | ';
+											$out .= "<span class='$action'>$link$sep</span>";
+										}
+										$out .= '</div>';
+										echo $out;
+									}
+								?>								
 							</td>
 							<td><?php echo $theuser->first_name?></td>
 							<td><?php echo $theuser->last_name?></td>

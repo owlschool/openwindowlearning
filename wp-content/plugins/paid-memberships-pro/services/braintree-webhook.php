@@ -67,7 +67,10 @@
 		$morder->PaymentAmount = $transaction->amount;
 		$morder->payment_transaction_id = $transaction->id;
 		$morder->subscription_transaction_id = $webhookNotification->subscription->id;
-			
+
+		$morder->gateway = $old_order->gateway;
+		$morder->gateway_environment = $old_order->gateway_environment;
+		
 		$morder->FirstName = $transaction->billing_details->first_name;
 		$morder->LastName = $transaction->billing_details->last_name;
 		$morder->Email = $wpdb->get_var("SELECT user_email FROM $wpdb->users WHERE ID = '" . $old_order->user_id . "' LIMIT 1");		
@@ -123,6 +126,10 @@
 		
 		if(empty($old_order))
 			die("Couldn't find old order for failed payment with subscription id=" . $webhookNotification->subscription->id);
+
+		$user_id = $old_order->user_id;	
+		$user = get_userdata($user_id);
+		$user->membership_level = pmpro_getMembershipLevelForUser($user_id);
 		
 		//generate billing failure email
 		do_action("pmpro_subscription_payment_failed", $old_order);	
@@ -171,6 +178,10 @@
 		
 		if(empty($old_order))
 			die("Couldn't find old order for failed payment with subscription id=" . $webhookNotification->subscription->id);
+
+		$user_id = $old_order->user_id;	
+		$user = get_userdata($user_id);
+		$user->membership_level = pmpro_getMembershipLevelForUser($user_id);
 		
 		//generate billing failure email
 		do_action("pmpro_subscription_payment_failed", $old_order);	
@@ -220,6 +231,10 @@
 		
 		if(empty($old_order))
 			die("Couldn't find old order for failed payment with subscription id=" . $webhookNotification->subscription->id);
+
+		$user_id = $old_order->user_id;	
+		$user = get_userdata($user_id);
+		$user->membership_level = pmpro_getMembershipLevelForUser($user_id);
 		
 		//generate billing failure email
 		do_action("pmpro_subscription_expired", $old_order);	
@@ -268,6 +283,10 @@
 		
 		if(empty($old_order))
 			die("Couldn't find old order for failed payment with subscription id=" . $webhookNotification->subscription->id);
+
+		$user_id = $old_order->user_id;	
+		$user = get_userdata($user_id);
+		$user->membership_level = pmpro_getMembershipLevelForUser($user_id);
 		
 		//generate billing failure email
 		do_action("pmpro_subscription_cancelled", $old_order);	

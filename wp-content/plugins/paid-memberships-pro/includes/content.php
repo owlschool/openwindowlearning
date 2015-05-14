@@ -6,7 +6,7 @@ function pmpro_has_membership_access($post_id = NULL, $user_id = NULL, $return_m
 {
 	global $post, $wpdb, $current_user;
 	//use globals if no values supplied
-	if(!$post_id)
+	if(!$post_id && !empty($post))
 		$post_id = $post->ID;
 	if(!$user_id)
 		$user_id = $current_user->ID;
@@ -123,9 +123,12 @@ function pmpro_search_filter($query)
     //hide pmpro pages from search results
     if(!$query->is_admin && $query->is_search && empty($query->query['post_parent']))
     {
-        $query->set('post__not_in', $pmpro_pages ); // id of page or post		
+        if(empty($query->query_vars['post_parent']))	//avoiding post_parent queries for now			
+			$query->set('post__not_in', $pmpro_pages );
+
+		$query->set('post__not_in', $pmpro_pages ); // id of page or post		
     }
-	
+
     //hide member pages from non-members (make sure they aren't hidden from members)    
 	if(!$query->is_admin && 
 	   !$query->is_singular && 
@@ -154,11 +157,14 @@ function pmpro_search_filter($query)
 			$sql = "SELECT page_id FROM $wpdb->pmpro_memberships_pages WHERE page_id NOT IN(" . implode(',', $my_pages) . ")";
 		else
 			$sql = "SELECT page_id FROM $wpdb->pmpro_memberships_pages";
-        $hidden_page_ids = array_values(array_unique($wpdb->get_col($sql)));
-
+        $hidden_page_ids = array_values(array_unique($wpdb->get_col($sql)));						
+		
         if($hidden_page_ids)
-            $query->set('post__not_in', $hidden_page_ids);
-
+		{
+			if(empty($query->query_vars['post_parent']))			//avoiding post_parent queries for now				
+				$query->set('post__not_in', $hidden_page_ids);
+		}
+				
         //get categories that are filtered by level, but not my level
         global $pmpro_my_cats;
 		$pmpro_my_cats = array();
@@ -294,6 +300,21 @@ function pmpro_membership_content_filter($content, $skipcheck = false)
 
 		if(empty($post_membership_levels_names))
 			$post_membership_levels_names = array();
+
+        //hide levels which don't allow signups by default
+        if(!apply_filters("pmpro_membership_content_filter_disallowed_levels", false, $post_membership_levels_ids, $post_membership_levels_names))
+        {
+            foreach($post_membership_levels_ids as $key=>$id)
+            {
+                //does this level allow registrations?
+                $level_obj = pmpro_getLevel($id);
+                if(!$level_obj->allow_signups)
+                {
+                    unset($post_membership_levels_ids[$key]);
+                    unset($post_membership_levels_names[$key]);
+                }
+            }
+        }
 
 		$pmpro_content_message_pre = '<div class="pmpro_content_message">';
 		$pmpro_content_message_post = '</div>';

@@ -3,10 +3,10 @@ Contributors: latorante
 Donate link: http://donate.latorante.name/
 Tags: comments, comment, image, attachment, images, files
 Requires at least: 3.0
-Tested up to: 3.8
+Tested up to: 4.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.3.5
+Stable tag: 1.5.5
 
 Allow your visitors to attach files with their comments!
 
@@ -63,6 +63,12 @@ It should be easy peasy for you to style it! :)
 
 == Upgrade Notice ==
 
+= 1.5.5 =
+* Wrong operator bugfix
+
+= 1.5 =
+* Tested on latest WordPress 4.4
+
 = 1.3 =
 * APK and rel="lightbox" on image attachments
 
@@ -70,6 +76,12 @@ It should be easy peasy for you to style it! :)
 * Experimental featured image feature removal, bug-fix.
 
 == Changelog ==
+
+= 1.5 =
+* Tested on latest WordPress 4.4
+* Added languages support (thanks to Johannes Bouchain)
+* Added German translation (thanks to Johannes Bouchain)
+* Added new plugin icon
 
 = 1.3.5 =
 * Added ability to delete attachment from wordpress admin.

@@ -17,7 +17,7 @@ class WpProQuiz_View_FrontQuiz extends WpProQuiz_View_View {
 	}
 	
 	public function show($preview = false) {
-                global $post;
+
 		$question_count = count($this->question);
 		
 		$result = $this->quiz->getResultText();
@@ -53,53 +53,16 @@ class WpProQuiz_View_FrontQuiz extends WpProQuiz_View_View {
 		
 			$this->showReviewBox($question_count);
 			$this->showQuizAnker();
-
+			
 			$quizData = $this->showQuizBox($question_count);
 					
 		?>
 		</div>
-                <?php 
-$bo = $this->createOption($preview);
-		if(get_post_type() != "sfwd-quiz") {
-			$quiz_id = $this->quiz->getId();
-			$quiz_post_id = learndash_get_quiz_id_by_pro_quiz_id($quiz_id);
-		}
-		else
-		$quiz_post_id = (empty($post->ID))? '0':$post->ID;
-
-		echo " <script type='text/javascript'>
-		function load_wpProQuizFront".$this->quiz->getId()."() {
-			jQuery('#wpProQuiz_".$this->quiz->getId()."').wpProQuizFront({
-				quiz: ".$quiz_post_id.",
-				quizId: ".(int)$this->quiz->getId().",
-				mode: ".(int)$this->quiz->getQuizModus().",
-				globalPoints: ".(int)$quizData['globalPoints'].",
-				timelimit: ".(int)$this->quiz->getTimeLimit().",
-				resultsGrade: ".$resultsProzent.",
-				bo: ".$bo.",
-				qpp: ".$this->quiz->getQuestionsPerPage().",
-				catPoints: ".json_encode($quizData['catPoints']).",
-				formPos: ".(int)$this->quiz->getFormShowPosition().",
-				lbn: ".json_encode(($this->quiz->isShowReviewQuestion() && !$this->quiz->isQuizSummaryHide()) ? __('Quiz-summary', 'wp-pro-quiz') : __('Finish quiz', 'wp-pro-quiz')).",
-				json: ".json_encode($quizData['json'])."
-			});
-		}
-		var loaded_wpProQuizFront".$this->quiz->getId()." = 0;
-		jQuery(document).ready(function($) {
-			load_wpProQuizFront".$this->quiz->getId()."();
-			loaded_wpProQuizFront".$this->quiz->getId()." = 1;
-		});
-		jQuery(window).load(function($) {
-			if(loaded_wpProQuizFront".$this->quiz->getId()." == 0)
-			load_wpProQuizFront".$this->quiz->getId()."();
-		});
-		</script>";?>
-
 		<?php 
-		/**if($preview)
+		if($preview)
 		add_action("admin_footer", array($this, "script_preview"));
 		else
-		add_action("wp_footer", array($this, "script"));*/
+		add_action("wp_footer", array($this, "script"));
 			
 	}
 	public function script_preview() {
@@ -119,6 +82,7 @@ $bo = $this->createOption($preview);
 		}
 
 		$resultsProzent = json_encode($result['prozent']);
+			
 		ob_start();
 		$quizData = $this->showQuizBox($question_count);
 		ob_get_clean();
@@ -130,7 +94,6 @@ $bo = $this->createOption($preview);
 		}
 		else
 		$quiz_post_id = (empty($post->ID))? '0':$post->ID;
-
 		echo " <script type='text/javascript'>
 		function load_wpProQuizFront".$this->quiz->getId()."() {
 			jQuery('#wpProQuiz_".$this->quiz->getId()."').wpProQuizFront({
@@ -222,7 +185,6 @@ $bo = $this->createOption($preview);
 	}
 	
 	public function showMaxQuestion() {
-                global $post;
 		$question_count = count($this->question);
 
 		$result = $this->quiz->getResultText();
@@ -261,33 +223,8 @@ $bo = $this->createOption($preview);
 			$this->showQuizAnker();
 		?>
 		</div>
-		<?php
-
-		$bo = $this->createOption(false);
-		if(get_post_type() != "sfwd-quiz") {
-			$quiz_id = $this->quiz->getId();
-			$quiz_post_id = learndash_get_quiz_id_by_pro_quiz_id($quiz_id);
-		}
-		else
-		$quiz_post_id = (empty($post->ID))? '0':$post->ID;
-
-		echo "<script type='text/javascript'>
-		jQuery(document).ready(function($) {
-			$('#wpProQuiz_". $this->quiz->getId()."').wpProQuizFront({
-				quiz: ".$quiz_post_id.",			
-				quizId: ". (int)$this->quiz->getId().",
-				mode: ". (int)$this->quiz->getQuizModus().",
-				timelimit: ". (int)$this->quiz->getTimeLimit().",
-				resultsGrade: ". $resultsProzent.",
-				bo: ". $bo .",
-				qpp: ". $this->quiz->getQuestionsPerPage().",
-				formPos: ". (int)$this->quiz->getFormShowPosition().",
-				lbn: ". json_encode(($this->quiz->isShowReviewQuestion() && !$this->quiz->isQuizSummaryHide()) ? __('Quiz-summary', 'wp-pro-quiz') : __('Finish quiz', 'wp-pro-quiz'))."
-			});
-		});
-		</script>";
- 
-		//add_action("wp_footer", array($this, "max_question_script"));
+		<?php 
+		add_action("wp_footer", array($this, "max_question_script"));
 	}
 	
 	public function getQuizData() {
@@ -899,9 +836,7 @@ $bo = $this->createOption($preview);
 	
 							foreach($answerArray as $v) {
 								$answer_text = $v->isHtml() ? do_shortcode($v->getAnswer()) : esc_html($v->getAnswer()); 
-								if ($v->isHtml()) {
-                                                                    $answer_text = apply_filters('lms_quiz_content', $answer_text);
-                                                                }
+								
 								if($answer_text == '') {
 									continue;
 								}
