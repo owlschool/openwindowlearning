@@ -1,0 +1,1633 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "\"Go to website\" text"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:16
+msgid "% Comments"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "(in pixels or percentage, e.g.:100% or 100px)"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "(in pixels, e.g.: 100px)"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "2014 &copy; newave. All rights reserved."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "404 page subtitle"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "404 page title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "775 New York Ave, Brooklyn, Kings, New York 11203"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:46
+msgid "<h4>Leave a comment to %s </h4>"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:46
+msgid "<h4>Leave a comment</h4>"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:46
+msgid "<h4>You must be <a href=\"%s\">logged in</a> to post a comment.</h4>"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Accordion"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Accordion Content Here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Accordion Item"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Accordion Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcodes_popup/shortcodes_popup.php:136
+msgid "Add %s"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/components/shortcodes/shortcodes_popup/shortcodes_popup.php:134
+msgid "Add Shortcode"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Add code before the &lt;/head&gt; tag."
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Alert Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Author"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Author Info Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Author of the quote"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Back to home"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Background Color"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Background color for the alert box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Backup Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Backup and Restore Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Big Counter Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Blog Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Bullet Words"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button Caption"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button Color"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button Link"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button Name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button Shape"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button Size"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Button URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Button link opens in a new or current window"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:46
+msgid "Cancel Reply"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Center Image FX"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Center Image URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Client Company"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Client Logo"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Client Name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Client Testimonial goes here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Client Testimonials"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/components/shortcodes/shortcodes_popup/fontawesome-icons.php:407
+msgid "Close"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/sections/portfolio_item_normal.php:18
+#: newave-theme/sections/portfolio_item_full_screen.php:31
+#: newave-theme/sections/portfolio_item_slider.php:18
+msgid "Close Project"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Color"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Column"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Comments"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Company Address"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Company Email"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Company Info"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Company Name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Company Phone"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Contact Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Contact Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Container type"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Content With Dropcap"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Content goes here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Content position"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcodes_popup/shortcodes_popup.php:96
+msgid "Content: "
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Copyright Text"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Counter Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Counts"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Custom CSS"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Custom Color"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Custom Favicon"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Custom Loading Icon"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Did you love this project? Please share it with the world and we will love you forever!"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Dismiss this notice"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Dropcap"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Dropcap Letter"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Dropcap Shape"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Email Address"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Enable Smooth Scrolling"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Enable social sharing portfolio posts."
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Enter video ID (eg. 10145153)"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Enter video ID (eg. Wq4Y7ztznKc)"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Enter video background URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Error Page Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Escape message"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Example: 775 New York Ave, Brooklyn, Kings, New York 11203"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Excerpt Length"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Excerpt or Full Blog Content"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "FX effect"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "FontAwesome Icon"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Footer Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Footer Social Links"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Full Screen Image Parallax Layout Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Full Screen Slider"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Full Screen Slider Layout Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Full Screen Slider Speed"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Full Screen Slider Transition Type"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Full Screen Video Layout Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "General Settings"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Google Map Address"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Google Map Height"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Google Map Width"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Header"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Header Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Here we are. Come to drink a coffee!"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Higher number will be more zoomed in"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Home Layout Type"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Home Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Home Section Type"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Icon"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Icon displayed within counter box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Icon displayed within service box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Icon shape"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Icon size relative to their container"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Image ALT"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Image Background"
+msgstr ""
+
+#. Text in function
+#: newave-theme/sections/portfolio_item_full_screen.php:1
+msgid "Image Description"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Image Group"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Image Pattern Background"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Image Pattern Layout Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/sections/portfolio_item_full_screen.php:1
+msgid "Image Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Image URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Input the number of words you want to cut from the content to be the excerpt of search and archive page."
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Install Plugins"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Install Required Plugins"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Job Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/classes/class.options_machine.php:1
+msgid "Last Backup : "
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Last Column?"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Left Image FX"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Left Image URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/post_like/newave-like.php:1
+msgid "Like this"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Link"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Link Target Window"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Link URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "List Item"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "List Size"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "List Styles"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Logo - first version of the header layout"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Logo - fourth version of the header layout"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Logo - second version of the header layout"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Logo - third version of the header layout"
+msgstr ""
+
+#. Text in function
+#: newave-theme/functions.php:1
+msgid "Main Menu"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Map Marker"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Map Zoom Level"
+msgstr ""
+
+#. Text in function
+#: newave-theme/single.php:123
+msgid "Next Post"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:16
+msgid "No Comments"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/blog-post-format/post-common.php:19
+#: newave-theme/single.php:48
+msgid "No Tags"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Number of counts"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Number of posts to display"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Number of tweets to display"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:16
+msgid "One Comment"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Open the link in a new page or same page"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/admin/front-end/options.php:68
+msgid "Options Reset"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Outlined"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Parallax Quote"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Parallax Slider"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Parallax Slider Auto Play"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Parallax Slider Layout Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Parallax Slider Speed"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Paste your Google Analytics (or other) tracking code here. This will be added into the footer template of your theme."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Paste your css code. Any custom CSS from the user should go in this field, it will override the theme CSS. Do not include tags or any html tag in this field."
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Percentage"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Picture"
+msgstr ""
+
+#. Text in function
+#: newave-theme/sections/portfolio_item_external.php:42
+msgid "Pin this"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Please choose an image file for the marker."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Please choose an image file for your logo."
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Plugin activated successfully."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Portfolio Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Portfolio Sharing text"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Position of the content within the layout"
+msgstr ""
+
+#. Text in function
+#: newave-theme/comments.php:46
+msgid "Post Comment"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Post Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Post Title Length"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/blog-post-format/post-common.php:29
+#: newave-theme/single.php:43
+msgid "Posted by"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Posts"
+msgstr ""
+
+#. Text in function
+#: newave-theme/single.php:122
+msgid "Prev Post"
+msgstr ""
+
+#. Text in function
+#: newave-theme/functions.php:1
+msgid "Previous"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Progress Bar"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Progress Bars"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Option"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Option Icon"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Section"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Single Image"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Slide"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Slider"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project description goes here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Project option goes here"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/blog-post-format/post-common.php:69
+#: newave-theme/blog-post-format/post-common.php:71
+msgid "Read More"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Recent Posts"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcodes_popup/shortcodes_popup.php:136
+msgid "Remove %s"
+msgstr ""
+
+#. Text in function
+#: newave-theme/functions.php:1
+msgid "Reply"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Return to the dashboard"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Right Image FX"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Right Image URL"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/admin/front-end/options.php:43
+#: newave-theme/admin/front-end/options.php:67
+msgid "Save All Changes"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/searchform.php:3
+#: newave-theme/searchform.php:5
+msgid "Search"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Select Body Font Family"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Select Color Skin"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Select Htag Font Family"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Select a Header Layout"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Select a font family for body text. Leave empty to use default."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Select a font family for htag text. Leave empty to use default."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Select your home type."
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Service Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Service Description"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Service Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcodes_popup/shortcodes_popup.php:136
+msgid "Set Icon"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Shape"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Share on Facebook"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Share on Pinterest"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Share on Twitter"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Share portfolio item on Facebook."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Share portfolio item on Pinterest."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Share portfolio item on Twitter."
+msgstr ""
+
+#. Text in function
+#: newave-theme/sections/portfolio_item_external.php:42
+msgid "Share this"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show Portfolio Filters"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show excerpt or full blog content on archive / blog pages"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show link to comments."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show map"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show map in contact section."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show portfolio filter in portfolio section(s)."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show social links in footer."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show the author info box below posts."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Show the post title."
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Size"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/sections/portfolio_item_full_screen.php:36
+msgid "Slide Left"
+msgstr ""
+
+#. Text in echo
+#: newave-theme/sections/portfolio_item_full_screen.php:37
+msgid "Slide Right"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Slider Image ALT"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Slider Image URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Small Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Link 1"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Link 1 URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Link 2"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Link 2 URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Link 3"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Link 3 URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Link Type"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Social Links"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Social Sharing Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Sharing Link"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Social Sharing Links"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "Something went wrong."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Space before &lt;/head&gt;"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Specify the slider speed in milliseconds"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Specify the transition type."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Styling Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Subtitle"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "TITLE GOES HERE"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tab Content Here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tab Item"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tab Name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tab Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tabs"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tagline Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tagline description"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Target Action"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Target Window"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Team Member"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Team Member Name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Team Members"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Team member description"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Technologies"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Technology"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Technology Description Here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Technology Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Testimonial"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Text Alignment"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Text Color"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Text Slider"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Text Slider Speed"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Text Slider Transition Type"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "The Quote Here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "The caption of the tagline button"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/helper_classes/tgm-plugin-activation/class-tgm-plugin-activation.php:1
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "The length of the post title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "The page that you requested doesn't exist. You may want to return home and start again. Sorry :("
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "This is my preview text!"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Title"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Title Size"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Title of the service"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Toggle"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Toggle Content Here"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Tracking Code"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Transfer Theme Options Data"
+msgstr ""
+
+#. Text in function
+#: newave-theme/sections/portfolio_item_external.php:42
+msgid "Tweet this"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Tweets Count"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Twitter Parallax Box"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Twitter account name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Twitter username"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Typography"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "URL for the button"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "URL of the project"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "URL of the tagline"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "URL or path to logo file"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "URL or path to team member\\'s picture"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Upload image background"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Upload image pattern background"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Use smooth or standard scrolling."
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Video Background URL"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Video Height"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Video ID"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Video Width"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Vimeo Video"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Visit Project"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Web Design"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Website name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "YOUR MESSAGE HERE"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/post_like/newave-like.php:1
+msgid "You already liked this!"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "You can put url of an animated image that will be displayed while the website is loading"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "You can put url of an ico image that will represent your website's favicon (16px x 16px)"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "You can transfer the saved options data between different installs by copying the text inside the text box. To import data from another install, replace the data in the text box with the one from another install and click Import Options"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "You can use the two buttons below to backup your current options, and then restore it back at a later time. This is useful if you want to experiment on the options but would like to keep the old settings in case you need it back."
+msgstr ""
+
+#. Text in function
+#: newave-theme/functions.php:1
+msgid "Your comment is awaiting moderation"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Your company info"
+msgstr ""
+
+#. Text in function
+#: newave-theme/admin/functions/functions.options.php:1
+msgid "Your company name"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "Youtube Video"
+msgstr ""
+
+#. Text in function
+#: newave-theme/functions.php:1
+msgid "at"
+msgstr ""
+
+#. Text in function
+#: newave-theme/components/shortcodes/shortcode_definitions.php:1
+msgid "go to website"
+msgstr ""
+
+#. Text in function
+#: newave-theme/functions.php:1
+msgid "says:"
+msgstr ""

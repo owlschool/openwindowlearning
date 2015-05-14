@@ -1,0 +1,388 @@
+00:04:07 (wp-cron) ---- START TICKET EMAIL CHECK ----
+00:04:07 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+00:04:08 (wp-cron) *** No new mail to fetch ***
+00:04:08 (wp-cron) ---- END TICKET EMAIL CHECK ----
+00:20:11 (wp-cron) ---- START TICKET EMAIL CHECK ----
+00:20:11 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+00:20:12 (wp-cron) *** No new mail to fetch ***
+00:20:12 (wp-cron) ---- END TICKET EMAIL CHECK ----
+00:33:33 (wp-cron) ---- START TICKET EMAIL CHECK ----
+00:33:33 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+00:33:34 (wp-cron) *** No new mail to fetch ***
+00:33:34 (wp-cron) ---- END TICKET EMAIL CHECK ----
+00:50:37 (wp-cron) ---- START TICKET EMAIL CHECK ----
+00:50:37 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+00:50:37 (wp-cron) *** No new mail to fetch ***
+00:50:37 (wp-cron) ---- END TICKET EMAIL CHECK ----
+01:08:58 (wp-cron) ---- START TICKET EMAIL CHECK ----
+01:08:58 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+01:09:00 (wp-cron) *** No new mail to fetch ***
+01:09:00 (wp-cron) ---- END TICKET EMAIL CHECK ----
+01:18:38 (wp-cron) ---- START TICKET EMAIL CHECK ----
+01:18:38 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+01:18:40 (wp-cron) *** No new mail to fetch ***
+01:18:40 (wp-cron) ---- END TICKET EMAIL CHECK ----
+01:33:32 (wp-cron) ---- START TICKET EMAIL CHECK ----
+01:33:32 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+01:33:33 (wp-cron) *** No new mail to fetch ***
+01:33:33 (wp-cron) ---- END TICKET EMAIL CHECK ----
+01:33:34 (wp-comments-post) --- START REPLY NOTIFICATION ---
+01:33:34 (wp-comments-post) --- END REPLY NOTIFICATION ---
+02:06:38 (wp-cron) ---- START TICKET EMAIL CHECK ----
+02:06:38 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+02:06:39 (wp-cron) *** No new mail to fetch ***
+02:06:39 (wp-cron) ---- END TICKET EMAIL CHECK ----
+02:19:41 (wp-cron) ---- START TICKET EMAIL CHECK ----
+02:19:41 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+02:19:41 (wp-cron) *** No new mail to fetch ***
+02:19:41 (wp-cron) ---- END TICKET EMAIL CHECK ----
+02:37:25 (wp-cron) ---- START TICKET EMAIL CHECK ----
+02:37:25 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+02:37:26 (wp-cron) *** No new mail to fetch ***
+02:37:26 (wp-cron) ---- END TICKET EMAIL CHECK ----
+02:49:35 (wp-cron) ---- START TICKET EMAIL CHECK ----
+02:49:35 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+02:49:35 (wp-cron) *** No new mail to fetch ***
+02:49:35 (wp-cron) ---- END TICKET EMAIL CHECK ----
+03:17:21 (wp-cron) ---- START TICKET EMAIL CHECK ----
+03:17:21 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+03:17:22 (wp-cron) *** No new mail to fetch ***
+03:17:22 (wp-cron) ---- END TICKET EMAIL CHECK ----
+03:23:22 (wp-cron) ---- START TICKET EMAIL CHECK ----
+03:23:22 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+03:23:23 (wp-cron) *** No new mail to fetch ***
+03:23:23 (wp-cron) ---- END TICKET EMAIL CHECK ----
+03:23:23 (wp-cron) ---- START FEEDBACK EMAIL CHECK ----
+03:23:23 (wp-cron) Searching for replys between 2014-12-30 07:23:23 and 2014-12-30 03:23:23
+03:23:23 (wp-cron) *** No users found to send feedback e-mail ***
+03:23:23 (wp-cron) ---- END FEEDBACK EMAIL CHECK ----
+04:01:16 (wp-cron) ---- START TICKET EMAIL CHECK ----
+04:01:16 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+04:01:17 (wp-cron) *** No new mail to fetch ***
+04:01:17 (wp-cron) ---- END TICKET EMAIL CHECK ----
+04:06:19 (wp-cron) ---- START TICKET EMAIL CHECK ----
+04:06:19 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+04:06:20 (wp-cron) *** No new mail to fetch ***
+04:06:20 (wp-cron) ---- END TICKET EMAIL CHECK ----
+04:23:36 (wp-cron) ---- START TICKET EMAIL CHECK ----
+04:23:36 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+04:23:37 (wp-cron) *** No new mail to fetch ***
+04:23:37 (wp-cron) ---- END TICKET EMAIL CHECK ----
+04:40:15 (wp-cron) ---- START TICKET EMAIL CHECK ----
+04:40:15 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+04:40:17 (wp-cron) *** No new mail to fetch ***
+04:40:17 (wp-cron) ---- END TICKET EMAIL CHECK ----
+04:50:03 (wp-cron) ---- START TICKET EMAIL CHECK ----
+04:50:03 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+04:50:03 (wp-cron) *** No new mail to fetch ***
+04:50:03 (wp-cron) ---- END TICKET EMAIL CHECK ----
+05:11:05 (wp-cron) ---- START TICKET EMAIL CHECK ----
+05:11:05 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+05:11:06 (wp-cron) *** No new mail to fetch ***
+05:11:06 (wp-cron) ---- END TICKET EMAIL CHECK ----
+05:29:05 (wp-cron) ---- START TICKET EMAIL CHECK ----
+05:29:05 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+05:29:06 (wp-cron) *** No new mail to fetch ***
+05:29:06 (wp-cron) ---- END TICKET EMAIL CHECK ----
+05:36:11 (wp-cron) ---- START TICKET EMAIL CHECK ----
+05:36:11 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+05:36:12 (wp-cron) *** No new mail to fetch ***
+05:36:12 (wp-cron) ---- END TICKET EMAIL CHECK ----
+05:56:43 (wp-cron) ---- START TICKET EMAIL CHECK ----
+05:56:43 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+05:56:44 (wp-cron) *** No new mail to fetch ***
+05:56:44 (wp-cron) ---- END TICKET EMAIL CHECK ----
+05:56:46 (wp-comments-post) --- START REPLY NOTIFICATION ---
+05:56:46 (wp-comments-post) --- END REPLY NOTIFICATION ---
+06:08:02 (wp-cron) ---- START TICKET EMAIL CHECK ----
+06:08:02 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+06:08:04 (wp-cron) *** No new mail to fetch ***
+06:08:04 (wp-cron) ---- END TICKET EMAIL CHECK ----
+06:29:12 (wp-cron) ---- START TICKET EMAIL CHECK ----
+06:29:12 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+06:29:13 (wp-cron) *** No new mail to fetch ***
+06:29:13 (wp-cron) ---- END TICKET EMAIL CHECK ----
+06:35:50 (wp-cron) ---- START TICKET EMAIL CHECK ----
+06:35:50 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+06:35:51 (wp-cron) *** No new mail to fetch ***
+06:35:51 (wp-cron) ---- END TICKET EMAIL CHECK ----
+06:51:38 (wp-cron) ---- START TICKET EMAIL CHECK ----
+06:51:38 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+06:51:39 (wp-cron) *** No new mail to fetch ***
+06:51:39 (wp-cron) ---- END TICKET EMAIL CHECK ----
+07:03:33 (wp-cron) ---- START TICKET EMAIL CHECK ----
+07:03:33 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+07:03:34 (wp-cron) *** No new mail to fetch ***
+07:03:34 (wp-cron) ---- END TICKET EMAIL CHECK ----
+07:21:35 (wp-cron) ---- START TICKET EMAIL CHECK ----
+07:21:35 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+07:21:36 (wp-cron) *** No new mail to fetch ***
+07:21:36 (wp-cron) ---- END TICKET EMAIL CHECK ----
+07:21:36 (wp-cron) ---- START FEEDBACK EMAIL CHECK ----
+07:21:36 (wp-cron) Searching for replys between 2014-12-30 11:21:36 and 2014-12-30 07:21:36
+07:21:36 (wp-cron) *** No users found to send feedback e-mail ***
+07:21:36 (wp-cron) ---- END FEEDBACK EMAIL CHECK ----
+07:34:32 (wp-cron) ---- START TICKET EMAIL CHECK ----
+07:34:32 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+07:34:33 (wp-cron) *** No new mail to fetch ***
+07:34:33 (wp-cron) ---- END TICKET EMAIL CHECK ----
+07:52:40 (wp-cron) ---- START TICKET EMAIL CHECK ----
+07:52:40 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+07:52:42 (wp-cron) *** No new mail to fetch ***
+07:52:42 (wp-cron) ---- END TICKET EMAIL CHECK ----
+08:05:48 (wp-cron) ---- START TICKET EMAIL CHECK ----
+08:05:48 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+08:05:49 (wp-cron) *** No new mail to fetch ***
+08:05:49 (wp-cron) ---- END TICKET EMAIL CHECK ----
+08:22:55 (wp-cron) ---- START TICKET EMAIL CHECK ----
+08:22:55 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+08:22:57 (wp-cron) *** No new mail to fetch ***
+08:22:57 (wp-cron) ---- END TICKET EMAIL CHECK ----
+08:47:39 (wp-cron) ---- START TICKET EMAIL CHECK ----
+08:47:39 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+08:47:40 (wp-cron) *** No new mail to fetch ***
+08:47:40 (wp-cron) ---- END TICKET EMAIL CHECK ----
+08:53:12 (wp-cron) ---- START TICKET EMAIL CHECK ----
+08:53:12 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+08:53:12 (wp-cron) *** No new mail to fetch ***
+08:53:12 (wp-cron) ---- END TICKET EMAIL CHECK ----
+09:11:06 (wp-cron) ---- START TICKET EMAIL CHECK ----
+09:11:06 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+09:11:07 (wp-cron) *** No new mail to fetch ***
+09:11:07 (wp-cron) ---- END TICKET EMAIL CHECK ----
+09:18:56 (wp-cron) ---- START TICKET EMAIL CHECK ----
+09:18:56 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+09:18:57 (wp-cron) *** No new mail to fetch ***
+09:18:57 (wp-cron) ---- END TICKET EMAIL CHECK ----
+09:35:56 (wp-cron) ---- START TICKET EMAIL CHECK ----
+09:35:56 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+09:35:56 (wp-cron) *** No new mail to fetch ***
+09:35:56 (wp-cron) ---- END TICKET EMAIL CHECK ----
+10:20:09 (wp-cron) ---- START TICKET EMAIL CHECK ----
+10:20:09 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+10:20:10 (wp-cron) *** No new mail to fetch ***
+10:20:10 (wp-cron) ---- END TICKET EMAIL CHECK ----
+11:12:36 (wp-cron) ---- START TICKET EMAIL CHECK ----
+11:12:36 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+11:12:37 (wp-cron) *** No new mail to fetch ***
+11:12:37 (wp-cron) ---- END TICKET EMAIL CHECK ----
+11:26:52 (wp-cron) ---- START TICKET EMAIL CHECK ----
+11:26:52 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+11:26:52 (wp-cron) *** No new mail to fetch ***
+11:26:52 (wp-cron) ---- END TICKET EMAIL CHECK ----
+11:26:53 (wp-cron) ---- START FEEDBACK EMAIL CHECK ----
+11:26:53 (wp-cron) Searching for replys between 2014-12-30 15:26:53 and 2014-12-30 11:26:53
+11:26:53 (wp-cron) *** No users found to send feedback e-mail ***
+11:26:53 (wp-cron) ---- END FEEDBACK EMAIL CHECK ----
+11:39:48 (wp-cron) ---- START TICKET EMAIL CHECK ----
+11:39:48 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+11:39:49 (wp-cron) *** No new mail to fetch ***
+11:39:49 (wp-cron) ---- END TICKET EMAIL CHECK ----
+11:50:34 (wp-cron) ---- START TICKET EMAIL CHECK ----
+11:50:34 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+11:50:35 (wp-cron) *** No new mail to fetch ***
+11:50:35 (wp-cron) ---- END TICKET EMAIL CHECK ----
+12:03:32 (wp-cron) ---- START TICKET EMAIL CHECK ----
+12:03:32 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+12:03:33 (wp-cron) *** No new mail to fetch ***
+12:03:33 (wp-cron) ---- END TICKET EMAIL CHECK ----
+12:03:42 (wp-comments-post) --- START REPLY NOTIFICATION ---
+12:03:42 (wp-comments-post) --- END REPLY NOTIFICATION ---
+12:18:57 (wp-cron) ---- START TICKET EMAIL CHECK ----
+12:18:57 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+12:18:58 (wp-cron) *** No new mail to fetch ***
+12:18:58 (wp-cron) ---- END TICKET EMAIL CHECK ----
+12:40:03 (wp-cron) ---- START TICKET EMAIL CHECK ----
+12:40:03 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+12:40:04 (wp-cron) *** No new mail to fetch ***
+12:40:04 (wp-cron) ---- END TICKET EMAIL CHECK ----
+12:49:30 (wp-cron) ---- START TICKET EMAIL CHECK ----
+12:49:30 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+12:49:31 (wp-cron) *** No new mail to fetch ***
+12:49:31 (wp-cron) ---- END TICKET EMAIL CHECK ----
+13:07:33 (wp-cron) ---- START TICKET EMAIL CHECK ----
+13:07:33 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+13:07:34 (wp-cron) *** No new mail to fetch ***
+13:07:34 (wp-cron) ---- END TICKET EMAIL CHECK ----
+13:33:07 (wp-cron) ---- START TICKET EMAIL CHECK ----
+13:33:07 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+13:33:08 (wp-cron) *** No new mail to fetch ***
+13:33:08 (wp-cron) ---- END TICKET EMAIL CHECK ----
+13:35:55 (wp-cron) ---- START TICKET EMAIL CHECK ----
+13:35:55 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+13:35:55 (wp-cron) *** No new mail to fetch ***
+13:35:55 (wp-cron) ---- END TICKET EMAIL CHECK ----
+13:50:48 (wp-cron) ---- START TICKET EMAIL CHECK ----
+13:50:48 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+13:50:49 (wp-cron) *** No new mail to fetch ***
+13:50:49 (wp-cron) ---- END TICKET EMAIL CHECK ----
+14:04:11 (wp-cron) ---- START TICKET EMAIL CHECK ----
+14:04:11 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+14:04:12 (wp-cron) *** No new mail to fetch ***
+14:04:12 (wp-cron) ---- END TICKET EMAIL CHECK ----
+14:18:57 (wp-cron) ---- START TICKET EMAIL CHECK ----
+14:18:57 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+14:18:57 (wp-cron) *** No new mail to fetch ***
+14:18:57 (wp-cron) ---- END TICKET EMAIL CHECK ----
+14:40:59 (wp-cron) ---- START TICKET EMAIL CHECK ----
+14:40:59 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+14:41:00 (wp-cron) *** No new mail to fetch ***
+14:41:00 (wp-cron) ---- END TICKET EMAIL CHECK ----
+14:49:35 (wp-cron) ---- START TICKET EMAIL CHECK ----
+14:49:35 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+14:49:36 (wp-cron) *** No new mail to fetch ***
+14:49:36 (wp-cron) ---- END TICKET EMAIL CHECK ----
+15:03:50 (wp-cron) ---- START TICKET EMAIL CHECK ----
+15:03:50 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+15:03:50 (wp-cron) *** No new mail to fetch ***
+15:03:50 (wp-cron) ---- END TICKET EMAIL CHECK ----
+15:26:13 (wp-cron) ---- START TICKET EMAIL CHECK ----
+15:26:13 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+15:26:14 (wp-cron) *** No new mail to fetch ***
+15:26:14 (wp-cron) ---- END TICKET EMAIL CHECK ----
+15:26:14 (wp-cron) ---- START FEEDBACK EMAIL CHECK ----
+15:26:14 (wp-cron) Searching for replys between 2014-12-30 19:26:14 and 2014-12-30 15:26:14
+15:26:14 (wp-cron) Found 1 tickets
+15:26:14 (wp-cron) Generating e-mail for ticket ID# 12461 and e-mail jinheenoh832@gmail.com
+15:26:14 (wp-cron) Mail sent successfully
+15:26:14 (wp-cron) ---- END FEEDBACK EMAIL CHECK ----
+15:34:58 (wp-cron) ---- START TICKET EMAIL CHECK ----
+15:34:58 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+15:34:59 (wp-cron) *** No new mail to fetch ***
+15:34:59 (wp-cron) ---- END TICKET EMAIL CHECK ----
+15:50:52 (wp-cron) ---- START TICKET EMAIL CHECK ----
+15:50:52 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+15:50:52 (wp-cron) *** No new mail to fetch ***
+15:50:52 (wp-cron) ---- END TICKET EMAIL CHECK ----
+16:09:41 (wp-cron) ---- START TICKET EMAIL CHECK ----
+16:09:41 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+16:09:41 (wp-cron) *** No new mail to fetch ***
+16:09:41 (wp-cron) ---- END TICKET EMAIL CHECK ----
+16:21:10 (wp-cron) ---- START TICKET EMAIL CHECK ----
+16:21:10 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+16:21:11 (wp-cron) *** No new mail to fetch ***
+16:21:11 (wp-cron) ---- END TICKET EMAIL CHECK ----
+16:35:02 (wp-cron) ---- START TICKET EMAIL CHECK ----
+16:35:02 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+16:35:02 (wp-cron) *** No new mail to fetch ***
+16:35:02 (wp-cron) ---- END TICKET EMAIL CHECK ----
+16:57:28 (wp-cron) ---- START TICKET EMAIL CHECK ----
+16:57:28 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+16:57:29 (wp-cron) *** No new mail to fetch ***
+16:57:29 (wp-cron) ---- END TICKET EMAIL CHECK ----
+17:12:26 (wp-cron) ---- START TICKET EMAIL CHECK ----
+17:12:26 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+17:12:27 (wp-cron) *** No new mail to fetch ***
+17:12:27 (wp-cron) ---- END TICKET EMAIL CHECK ----
+17:30:38 (wp-cron) ---- START TICKET EMAIL CHECK ----
+17:30:38 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+17:30:39 (wp-cron) *** No new mail to fetch ***
+17:30:39 (wp-cron) ---- END TICKET EMAIL CHECK ----
+17:44:28 (wp-cron) ---- START TICKET EMAIL CHECK ----
+17:44:28 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+17:44:29 (wp-cron) *** No new mail to fetch ***
+17:44:29 (wp-cron) ---- END TICKET EMAIL CHECK ----
+17:52:35 (wp-cron) ---- START TICKET EMAIL CHECK ----
+17:52:35 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+17:52:36 (wp-cron) *** No new mail to fetch ***
+17:52:36 (wp-cron) ---- END TICKET EMAIL CHECK ----
+18:16:14 (wp-cron) ---- START TICKET EMAIL CHECK ----
+18:16:14 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+18:16:16 (wp-cron) *** No new mail to fetch ***
+18:16:16 (wp-cron) ---- END TICKET EMAIL CHECK ----
+18:35:46 (wp-cron) ---- START TICKET EMAIL CHECK ----
+18:35:46 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+18:35:47 (wp-cron) *** No new mail to fetch ***
+18:35:47 (wp-cron) ---- END TICKET EMAIL CHECK ----
+19:03:11 (wp-cron) ---- START TICKET EMAIL CHECK ----
+19:03:11 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+19:03:11 (wp-cron) *** No new mail to fetch ***
+19:03:11 (wp-cron) ---- END TICKET EMAIL CHECK ----
+19:11:29 (wp-cron) ---- START TICKET EMAIL CHECK ----
+19:11:29 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+19:11:29 (wp-cron) *** No new mail to fetch ***
+19:11:29 (wp-cron) ---- END TICKET EMAIL CHECK ----
+19:24:53 (wp-cron) ---- START TICKET EMAIL CHECK ----
+19:24:53 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+19:24:54 (wp-cron) *** No new mail to fetch ***
+19:24:54 (wp-cron) ---- END TICKET EMAIL CHECK ----
+19:24:54 (wp-cron) ---- START FEEDBACK EMAIL CHECK ----
+19:24:54 (wp-cron) Searching for replys between 2014-12-30 23:24:54 and 2014-12-30 19:24:54
+19:24:54 (wp-cron) *** No users found to send feedback e-mail ***
+19:24:54 (wp-cron) ---- END FEEDBACK EMAIL CHECK ----
+19:37:01 (wp-cron) ---- START TICKET EMAIL CHECK ----
+19:37:01 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+19:37:01 (wp-cron) *** No new mail to fetch ***
+19:37:01 (wp-cron) ---- END TICKET EMAIL CHECK ----
+19:52:30 (wp-cron) ---- START TICKET EMAIL CHECK ----
+19:52:30 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+19:52:31 (wp-cron) *** No new mail to fetch ***
+19:52:31 (wp-cron) ---- END TICKET EMAIL CHECK ----
+20:05:46 (wp-cron) ---- START TICKET EMAIL CHECK ----
+20:05:46 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+20:05:47 (wp-cron) *** No new mail to fetch ***
+20:05:47 (wp-cron) ---- END TICKET EMAIL CHECK ----
+20:18:44 (wp-cron) ---- START TICKET EMAIL CHECK ----
+20:18:44 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+20:18:45 (wp-cron) *** No new mail to fetch ***
+20:18:45 (wp-cron) ---- END TICKET EMAIL CHECK ----
+20:34:20 (wp-cron) ---- START TICKET EMAIL CHECK ----
+20:34:20 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+20:34:21 (wp-cron) *** No new mail to fetch ***
+20:34:21 (wp-cron) ---- END TICKET EMAIL CHECK ----
+20:49:35 (wp-cron) ---- START TICKET EMAIL CHECK ----
+20:49:35 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+20:49:36 (wp-cron) *** No new mail to fetch ***
+20:49:36 (wp-cron) ---- END TICKET EMAIL CHECK ----
+21:04:01 (wp-cron) ---- START TICKET EMAIL CHECK ----
+21:04:01 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+21:04:02 (wp-cron) *** No new mail to fetch ***
+21:04:02 (wp-cron) ---- END TICKET EMAIL CHECK ----
+21:19:36 (wp-cron) ---- START TICKET EMAIL CHECK ----
+21:19:36 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+21:19:38 (wp-cron) *** No new mail to fetch ***
+21:19:38 (wp-cron) ---- END TICKET EMAIL CHECK ----
+21:33:42 (wp-cron) ---- START TICKET EMAIL CHECK ----
+21:33:42 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+21:33:44 (wp-cron) *** No new mail to fetch ***
+21:33:44 (wp-cron) ---- END TICKET EMAIL CHECK ----
+21:49:51 (wp-cron) ---- START TICKET EMAIL CHECK ----
+21:49:51 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+21:49:52 (wp-cron) *** No new mail to fetch ***
+21:49:52 (wp-cron) ---- END TICKET EMAIL CHECK ----
+22:03:57 (wp-cron) ---- START TICKET EMAIL CHECK ----
+22:03:57 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+22:03:58 (wp-cron) *** No new mail to fetch ***
+22:03:58 (wp-cron) ---- END TICKET EMAIL CHECK ----
+22:20:04 (wp-cron) ---- START TICKET EMAIL CHECK ----
+22:20:04 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+22:20:05 (wp-cron) *** No new mail to fetch ***
+22:20:05 (wp-cron) ---- END TICKET EMAIL CHECK ----
+22:33:50 (wp-cron) ---- START TICKET EMAIL CHECK ----
+22:33:50 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+22:33:50 (wp-cron) *** No new mail to fetch ***
+22:33:50 (wp-cron) ---- END TICKET EMAIL CHECK ----
+22:49:28 (wp-cron) ---- START TICKET EMAIL CHECK ----
+22:49:28 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+22:49:28 (wp-cron) *** No new mail to fetch ***
+22:49:28 (wp-cron) ---- END TICKET EMAIL CHECK ----
+23:05:19 (wp-cron) ---- START TICKET EMAIL CHECK ----
+23:05:19 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+23:05:19 (wp-cron) *** No new mail to fetch ***
+23:05:19 (wp-cron) ---- END TICKET EMAIL CHECK ----
+23:22:20 (wp-cron) ---- START TICKET EMAIL CHECK ----
+23:22:20 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+23:22:20 (wp-cron) *** No new mail to fetch ***
+23:22:20 (wp-cron) ---- END TICKET EMAIL CHECK ----
+23:22:20 (wp-cron) ---- START FEEDBACK EMAIL CHECK ----
+23:22:20 (wp-cron) Searching for replys between 2014-12-31 03:22:20 and 2014-12-30 23:22:20
+23:22:20 (wp-cron) *** No users found to send feedback e-mail ***
+23:22:20 (wp-cron) ---- END FEEDBACK EMAIL CHECK ----
+23:37:04 (wp-cron) ---- START TICKET EMAIL CHECK ----
+23:37:04 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+23:37:04 (wp-cron) *** No new mail to fetch ***
+23:37:04 (wp-cron) ---- END TICKET EMAIL CHECK ----
+23:49:08 (wp-cron) ---- START TICKET EMAIL CHECK ----
+23:49:08 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+23:49:09 (wp-cron) *** No new mail to fetch ***
+23:49:09 (wp-cron) ---- END TICKET EMAIL CHECK ----

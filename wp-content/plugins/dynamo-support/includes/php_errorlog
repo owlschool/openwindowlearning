@@ -1,0 +1,8 @@
+[21-Jan-2015 02:45:56 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-sms.php on line 110
+[21-Jan-2015 03:00:54 America/Chicago] PHP Fatal error:  Call to a member function lwrite() on a non-object in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-sms.php on line 11
+[21-Jan-2015 03:12:38 America/Chicago] PHP Fatal error:  Class 'WP_User_Query' not found in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-sms.php on line 23
+[21-Jan-2015 03:37:38 America/Chicago] PHP Parse error:  syntax error, unexpected 'count' (T_STRING) in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-sms.php on line 30
+[21-Jan-2015 03:38:00 America/Chicago] PHP Parse error:  syntax error, unexpected 'count' (T_STRING) in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-sms.php on line 30
+[22-Jan-2015 02:49:18 America/Chicago] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-mail.php on line 4
+[22-Jan-2015 02:50:09 America/Chicago] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-mail.php on line 4
+[22-Jan-2015 02:50:12 America/Chicago] PHP Parse error:  syntax error, unexpected ',', expecting ')' in /home/ged13712/public_html/wp-content/plugins/dynamo-support/includes/dynamo-support-mail.php on line 4
