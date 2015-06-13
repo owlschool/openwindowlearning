@@ -1,14 +1,14 @@
 === Anti-spam by CleanTalk - No Captcha, no comments & registrations spam ===
 Contributors: znaeff, shagimuratov, vlad-cleantalk
-Tags: akismet, anti-spam, antispam, bbpress spam, buddypress spam, captcha antispam, cf7 spam, comments spam, contact form spam, form, Formidable spam, jetpack spam, math, registration spam, s2member spam, signup spam, spam, spammers, spammy, WooCommerce spam, wordpress spam, booking spam, order spam, subscriptions spam, comments, gravity spam, gravity forms spam, widget, widget antispam, registration, spam pingbacks
+Tags: akismet, anti-spam, antispam, bbpress spam, buddypress spam, captcha antispam, cf7 spam, comments spam, contact form spam, form, Formidable spam, jetpack spam, math, registration spam, s2member spam, signup spam, spam, spammers, spammy, WooCommerce spam, wordpress spam, booking spam, order spam, subscriptions spam, comments, gravity spam, gravity forms spam, widget, widget spam, registration, plugin, antispam plugin, spam plugin, anti-spam plugin, ninja, cache spam
 Requires at least: 3.0
-Tested up to: 4.2 
-Stable tag: 5.6
+Tested up to: 4.2.2
+Stable tag: 5.13
 License: GPLv2 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 
-Max power, all-in-one, premium anti-spam. No comments & registrations spam, no contact spam, protects any forms. Just install and forget spam. 
+Max power, all-in-one, premium anti-spam. No comments & registrations spam, no contact spam, protects any forms. Just install and forget spam. 
 
 == Description ==
 No CAPTCHA, no questions, no counting animals, no puzzles, no math and no spam bots.
@@ -21,7 +21,7 @@ No CAPTCHA, no questions, no counting animals, no puzzles, no math and no spam b
 1. Stops spam bookings.
 1. Stops spam subscriptions.
 1. Stops spam in widgets.
-1. Check existing comments for spam
+1. Check existing comments for spam.
 
 = Spam protection =
 * WordPress, JetPack comments.
@@ -30,6 +30,9 @@ No CAPTCHA, no questions, no counting animals, no puzzles, no math and no spam b
 * WooCommerce review form.
 * WordPress Landing Pages.
 * Any WordPress form (option 'Custom contact forms'). 
+
+= Compatible with WordPress cache plugins =
+* W3 Total Cache, Quick Cache, WP Fastest Cache, Hyper Cache, WP Super cache
 
 = Check existing comments for spam =
 With the help of anti-spam CleanTalk you can check existing comments, to find and quickly delete spam comments. For use this function, go to WP Console->Comments->Find spam comments.
@@ -46,7 +49,7 @@ We have developed antispam for WordPress that would provide **maximum protection
 
 The anti-spam method offered by CleanTalk allows to switch from the methods that trouble the communication (CAPTCHA, question-answer etc.) to a more convenient one.
 
-The CleanTalk is premium anti-spam for WordPress, please look at the <a href="http://cleantalk.org/price">pricing</a>. The plugin works with cloud anti spam service CleanTalk. <b>CleanTalk has free trial for 14 days.</b> We try to provide anti-spam service at the highest level and we can not afford to offer a free version of our service, as this will immediately affect the quality of providing anti-spam protection. Paying for a year of anti-spam service, you save a lot more and get: 
+CleanTalk is premium anti-spam service for WordPress, please look at the <a href="http://cleantalk.org/price">pricing</a>. The plugin works with cloud anti spam service CleanTalk. <b>CleanTalk has free trial for 14 days.</b> We try to provide anti-spam service at the highest level and we can not afford to offer a free version of our service, as this will immediately affect the quality of providing anti-spam protection. Paying for a year of anti-spam service, you save a lot more and get: 
  
  * Up to 100% protection against spam bots.
  * Time and resources saving.
@@ -111,7 +114,7 @@ Please use email **stop_email@example.com** for comments, contacts or signups to
 Plugin Anti-spam by CleanTalk stops up to 100% of spam comments, spam signups (registrations), spam contact emails, spam subscriptions, spam bookings or spam orders.
 
 = What about pingback, trackback spam? = 
-Plugin by default pass pingbacks without any checks. All trackbacks will be blocked if the sender have spam activity.
+Plugin by default pass pingbacks without any checks. All trackbacks will be blocked if the sender had spam activity.
 
 = Can I use CleanTalk with Akismet? =
 Sure, you can use CleanTalk with Akismet. In this case probably you will have bigger false/positive rate (when legitimate comments/signups denies), but you will have stronger antispam protection at website.
@@ -137,7 +140,7 @@ The plugin has several options to detect spam bots and humans. If you just post 
 The comments will be passed, becuase the plugin detect sender as a human. So, use special email *stop_email@example.com* to test anti-spam or wait a few days to see how the plugin works. 
 
 = Is it free or paid? =
-The plugin is paid, you have two weeks free trial to test anti-spam for comments, registrations, bookings, contacts or orders. When the trial is finished, you can renew the subscription for 1 year or deactivate anti-spam plugin.
+The plugin is free. But the plugin uses CleanTalk cloud service to filter spam bots. You have to register an account and you have two weeks free trial to test anti-spam for comments, registrations, bookings, contacts or orders. When the trial (on CleanTalk account) is finished, you can renew the subscription for 1 year or deactivate anti-spam plugin.
 
 = Can I use CleanTalk with cache plugins? =
 Anti-spam by CleanTalk doesn't use static HTML code into templates, so all anti-spam functions works correctly with any WordPress cache plugins.
@@ -165,7 +168,7 @@ WordPress 3.0 at least. PHP 5 with CURL or file_get_contents() function and enab
 
 = Translations =
 * Danish (da_DK)
-* French (fr_FR)
+* French (fr_FR) - thanks to Gilles Santacreu <a href="http://net-ik.net">http://net-ik.net</a>
 * German (de_DE)
 * Italian (it_IT)
 * Polish (pl_PL)
@@ -181,6 +184,29 @@ WordPress 3.0 at least. PHP 5 with CURL or file_get_contents() function and enab
 1. Setup Android/iOS app to have push notices when new legitiamte comments/registrations or contactcs appears on the website. 
 
 == Changelog ==
+= 5.13 2015-06-12 =
+  * Closing notifocatiion for anti-spam renew
+  * Fixed bulk antispam comment checking  
+
+= 5.12 2015-06-01 =
+  * Added option for checking all post data for spam
+  * Some JavaScript protection improvements
+  * Added option for old JavaScript check (without AJAX)
+  
+= 5.10 2015-05-25 =
+  * Fixed Javascript error on some forms
+  
+= 5.9 2015-05-21 =
+  * Fixed Javascript error on CF7 and JetPack
+  * Some backend and frontent fixes
+  
+= 5.8 2015-05-18 =
+  * Minor fixes
+  
+= 5.7 2015-05-18 =
+  * Fixed French translation
+  * Fixed protection algorithm
+
 = 5.6 2015-05-11 =
   * Fixed translation
   * Fixed bulk comments anti-spam checking
@@ -560,6 +586,29 @@ WordPress 3.0 at least. PHP 5 with CURL or file_get_contents() function and enab
   * First version
 
 == Upgrade Notice ==
+= 5.13 2015-06-12 =
+  * Closing notifocatiion for anti-spam renew
+  * Fixed bulk antispam comment checking  
+  
+= 5.12 2015-06-01 =
+  * Added option for checking all post data for spam
+  * Some JavaScript protection improvements
+  * Added option for old JavaScript check (without AJAX)
+  
+= 5.10 2015-05-25 =
+  * Fixed Javascript error on some forms
+  
+= 5.9 2015-05-21 =
+  * Fixed Javascript error on CF7 and JetPack
+  * Some backend and frontent fixes
+  
+= 5.8 2015-05-18 =
+  * Minor fixes
+  
+= 5.7 2015-05-18 =
+  * Fixed French translation
+  * Fixed protection algorithm
+  
 = 5.6 2015-05-11 =
   * Fixed translation
   * Fixed bulk comments anti-spam checking

@@ -192,6 +192,12 @@ class CleantalkRequest {
      public $all_headers = null;
      
      /**
+     *  IP address of connection
+     * @var string
+     */
+     //public $remote_addr = null;
+     
+     /**
      *  Last error number
      * @var integer
      */
@@ -689,6 +695,11 @@ class Cleantalk {
     private function httpRequest($msg) {
         $result = false;
         $msg->all_headers=json_encode(apache_request_headers());
+        //$msg->remote_addr=$_SERVER['REMOTE_ADDR'];
+        //$msg->sender_info['remote_addr']=$_SERVER['REMOTE_ADDR'];
+        $si=json_decode($msg->sender_info,true);
+        $si['remote_addr']=$_SERVER['REMOTE_ADDR'];
+        $msg->sender_info=json_encode($si);
         if (((isset($this->work_url) && $this->work_url !== '') && ($this->server_changed + $this->server_ttl > time()))
 				|| $this->stay_on_server == true) {
 	        
@@ -1101,5 +1112,3 @@ if( !function_exists('apache_request_headers') )
 		return( $arh );
 	}
 }
-
-?>
