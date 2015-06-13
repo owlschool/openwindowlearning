@@ -1,0 +1,30 @@
+23:47:35 (dynamo-support-sms) ---- GOT TEXT MESSAGE ----
+23:47:35 (dynamo-support-sms) Existing user found for phone number +14252836331 - ID: 401
+23:47:35 (dynamo-support-sms) -- Attachment count 1 --
+23:47:35 (dynamo-support-sms) -- Attachment url https://api.twilio.com/2010-04-01/Accounts/ACb306da4fc21fba789ef31df22738c427/Messages/MMe9931f8ce93c351c180fa02151f7c3a7/Media/ME00320230d8c553a838149283fc9d2d3e --
+23:47:35 (dynamo-support-sms) -- Attachment type image/jpeg --
+23:47:37 (dynamo-support-sms) --- START NEW TICKET PUBLISHED ---
+23:47:37 (dynamo-support-sms) New ticket notification sent to bmwkarki@gmail.com
+23:47:37 (dynamo-support-sms) Sending Admin + Role New Ticket Notifications
+23:47:37 (dynamo-support-sms) New ticket notification sent to service@owlschoolonline.com
+23:47:37 (dynamo-support-sms) --- END NEW TICKET PUBLISHED ---
+23:47:37 (dynamo-support-sms) Message is a new ticket, ticket ID#12800 created
+23:47:37 (dynamo-support-sms) -- CP1 --
+23:47:37 (dynamo-support-sms) -- CP2 --
+23:47:37 (dynamo-support-sms) -- CP3 --
+23:58:05 (wp-cron) ---- START TICKET EMAIL CHECK ----
+23:58:05 (wp-cron) Starting tutoring@gedboard.com at imap.gmail.com:993
+23:58:05 (wp-cron) *** No new mail to fetch ***
+23:58:05 (wp-cron) ---- END TICKET EMAIL CHECK ----
+23:58:10 (dynamo-support-sms) ---- GOT TEXT MESSAGE ----
+23:58:10 (dynamo-support-sms) Existing user found for phone number +14252836331 - ID: 401
+23:58:10 (dynamo-support-sms) -- Attachment count 1 --
+23:58:10 (dynamo-support-sms) -- Attachment url https://api.twilio.com/2010-04-01/Accounts/ACb306da4fc21fba789ef31df22738c427/Messages/MMda37905967e06be67a9e9ffc1d22e538/Media/MEf7e14bc6c71b59ee4054f8ea2a8da1f8 --
+23:58:10 (dynamo-support-sms) -- Attachment type image/jpeg --
+23:58:12 (dynamo-support-sms) --- START NEW TICKET PUBLISHED ---
+23:58:12 (dynamo-support-sms) New ticket notification sent to bmwkarki@gmail.com
+23:58:12 (dynamo-support-sms) Sending Admin + Role New Ticket Notifications
+23:58:12 (dynamo-support-sms) New ticket notification sent to service@owlschoolonline.com
+23:58:12 (dynamo-support-sms) --- END NEW TICKET PUBLISHED ---
+23:58:12 (dynamo-support-sms) Message is a new ticket, ticket ID#12802 created
+23:58:12 (dynamo-support-sms) -- CP3 --

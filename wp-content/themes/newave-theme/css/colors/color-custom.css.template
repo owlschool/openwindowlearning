@@ -1,0 +1,197 @@
+<?php
+
+function hex2rgb($hex) {
+   $hex = str_replace("#", "", $hex);
+
+   if(strlen($hex) == 3) {
+      $r = hexdec(substr($hex,0,1).substr($hex,0,1));
+      $g = hexdec(substr($hex,1,1).substr($hex,1,1));
+      $b = hexdec(substr($hex,2,1).substr($hex,2,1));
+   } else {
+      $r = hexdec(substr($hex,0,2));
+      $g = hexdec(substr($hex,2,2));
+      $b = hexdec(substr($hex,4,2));
+   }
+   $rgb = array($r, $g, $b);
+   //return implode(",", $rgb); // returns the rgb values separated by commas
+   return $rgb; // returns an array with the rgb values
+}
+
+global $custom_css_template;
+$custom_css_template = <<<CSSCode
+
+a:hover {	color: #000000;}
+
+
+
+.grey {	background-color:#000000;}
+
+
+
+.color:hover {	background-color:#000000;}
+
+
+.parallax-overlay.parallax-background-color {
+
+	background-color:rgba(0,0,0,0.90);
+
+}
+
+span.text-color {	color:#000000;}
+
+
+
+.bar li span { 	background-color:#000000;}
+
+
+
+.service-item.text-right .fa-stack {	color:#000000;}
+
+
+
+.service-item.text-left .fa-stack {	color:#000000;}
+
+
+
+ul.technology li i {	color:#000000;}
+
+
+
+ul.technology li:hover {	background-color:#000000;}
+
+
+
+#filters ul li a:hover h5, #filters ul li a.active h5 {	background-color:#000000;}
+
+
+
+.project-overlay {	background-color:#000000;}
+
+
+
+#contact-formular input[type="submit"], input[type="submit"] {	background:#000000;}
+
+
+
+#menu_top {	background-color:#000000;}
+
+
+
+.blog-title a:hover {	color:#000000;}
+
+
+
+.blog-type {	background-color:#000000;}
+
+
+
+.post-quote {	background-color:#000000;}
+
+
+
+#sidebar .widget_categories li a:hover {	color: #000000;}
+
+
+
+#sidebar .recent-posts li a:hover {	color: #000000;}
+
+
+
+#sidebar .tagcloud a:hover {	background-color:#000000;}
+
+
+
+#sidebar .widget_archives li a:hover {	color: #000000;}
+
+
+
+.inner-navigation li a span {	background-color:#000000;}
+
+
+
+.accordion dt.accordion-active span.accordion-status {	background-color:#000000;}
+
+
+
+.toggle-active {	background: #000000;}
+
+
+
+ul.tabs .tab-active a { 	background-color: #000000; }
+
+
+
+.dropcap-normal {	color: #000000;}
+
+
+
+.dropcap.dark {	background-color: #000000;}
+
+
+
+.counters i {	color: #000000;}
+
+
+
+.fa-ul li i{	color:#000000;}
+
+
+
+.the-icons li i {	color: #000000;}
+
+
+
+.price-table i {	color: #000000;}
+
+
+
+.price-table:hover i {	background-color: #000000;	border-color: #000000;}
+
+
+
+.primary-color-background{
+
+
+
+    background-color: #000000;
+
+}
+
+i.normal-icon {
+    color:#000000;
+}
+
+i.icon-circle-box {
+    background-color:#000000;
+}
+
+i.icon-circle-box:hover {
+    background-color:#222222;
+}
+
+.fa-ul.big-list li i {
+    background:#000000;
+}
+
+.team-profile-new {
+	background-color:#000000;
+}
+
+.new-service-item i {
+	background-color:#000000;
+}
+
+.service-icon-border {
+	border:1px solid #000000;
+}
+
+.project-info-new {
+	background-color:#000000;
+}
+
+.newave-newsletter {
+   background-color:#000000;
+}
+CSSCode
+
+?>
