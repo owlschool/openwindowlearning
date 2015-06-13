@@ -2,6 +2,16 @@
 
 $ct_plugin_basename = 'cleantalk-spam-protect/cleantalk.php';
 
+if(isset($_GET['close_notice']))
+{
+	global $ct_data, $pagenow;
+	$ct_data=ct_get_data();
+	$ct_data['next_notice_show']=time()+86400;
+	update_option('cleantalk_data', $ct_data);
+	$_SERVER["QUERY_STRING"]=str_replace("close_notice=1","",$_SERVER["QUERY_STRING"]);
+	header("Location: $pagenow?".$_SERVER["QUERY_STRING"]);
+}
+
 require_once('cleantalk.class.php');
 
 // Timeout to get app server
@@ -198,7 +208,9 @@ function ct_admin_init() {
     add_settings_field('cleantalk_comments_test', __('Comments form', 'cleantalk'), 'ct_input_comments_test', 'cleantalk', 'cleantalk_settings_anti_spam');
     add_settings_field('cleantalk_contact_forms_test', __('Contact forms', 'cleantalk'), 'ct_input_contact_forms_test', 'cleantalk', 'cleantalk_settings_anti_spam');
     add_settings_field('cleantalk_general_contact_forms_test', __('Custom contact forms', 'cleantalk'), 'ct_input_general_contact_forms_test', 'cleantalk', 'cleantalk_settings_anti_spam');
+    add_settings_field('cleantalk_general_postdata_test', __('Check all post data', 'cleantalk'), 'ct_input_general_postdata_test', 'cleantalk', 'cleantalk_settings_anti_spam');
     add_settings_field('cleantalk_show_adminbar', __('Show statistics in admin bar', 'cleantalk'), 'ct_input_show_adminbar', 'cleantalk', 'cleantalk_settings_anti_spam');
+    add_settings_field('cleantalk_use_ajax', __('Use AJAX for JavaScript check', 'cleantalk'), 'ct_input_use_ajax', 'cleantalk', 'cleantalk_settings_anti_spam');
 }
 
 /**
@@ -319,6 +331,7 @@ function ct_section_settings_state() {
 	{
 		print ' &nbsp; <img src="' . plugin_dir_url(__FILE__) . 'inc/images/'.$img_no.'" alt=""  height="" /> '.__('Custom contact forms', 'cleantalk');
 	}
+	
 	print "</div>";
 	if($test_failed)
 	{
@@ -449,7 +462,46 @@ function ct_input_show_adminbar() {
     echo "<input type='radio' id='cleantalk_show_adminbar1' name='cleantalk_settings[show_adminbar]' value='1' " . ($value == '1' ? 'checked' : '') . " /><label for='cleantalk_show_adminbar1'> " . __('Yes') . "</label>";
     echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
     echo "<input type='radio' id='cleantalk_show_adminbar0' name='cleantalk_settings[show_adminbar]' value='0' " . ($value == '0' ? 'checked' : '') . " /><label for='cleantalk_show_adminbar0'> " . __('No') . "</label>";
-    admin_addDescriptionsFields(sprintf(__('Show statistics in admin bar.', 'cleantalk'),  $ct_options['spam_store_days']));
+    admin_addDescriptionsFields(sprintf(__('Show/hide CleanTalk icon in top level menu in WordPress backend.', 'cleantalk'),  $ct_options['show_adminbar']));
+}
+
+/**
+ * Admin callback function - Displays inputs of 'Show statistics in adminbar' plugin parameter
+ *
+ * @return null
+ */
+function ct_input_general_postdata_test() {
+    global $ct_options, $ct_data;
+
+    if(isset($ct_options['general_postdata_test']))
+    {
+    	$value = @intval($ct_options['general_postdata_test']);
+    }
+    else
+    {
+    	$value=0;
+    }
+    echo "<input type='radio' id='cleantalk_general_postdata_test1' name='cleantalk_settings[general_postdata_test]' value='1' " . ($value == '1' ? 'checked' : '') . " /><label for='cleantalk_general_postdata_test1'> " . __('Yes') . "</label>";
+    echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+    echo "<input type='radio' id='cleantalk_general_postdata_test0' name='cleantalk_settings[general_postdata_test]' value='0' " . ($value == '0' ? 'checked' : '') . " /><label for='cleantalk_general_postdata_test0'> " . __('No') . "</label>";
+    @admin_addDescriptionsFields(sprintf(__('Check all POST submissions from website visitors. Enable this option if you have spam misses on website or you don`t have records about missed spam in <a href="https://cleantalk.org/my/?user_token='.@$ct_data['user_token'].'&utm_source=wp-backend&utm_medium=admin-bar" target="_blank">CleanTalk dashboard</a>.', 'cleantalk'),  $ct_options['general_postdata_test']));
+}
+
+function ct_input_use_ajax() {
+    global $ct_options, $ct_data;
+
+    if(isset($ct_options['use_ajax']))
+    {
+    	$value = @intval($ct_options['use_ajax']);
+    }
+    else
+    {
+    	$value=1;
+    }
+    echo "<input type='radio' id='cleantalk_use_ajax1' name='cleantalk_settings[use_ajax]' value='1' " . ($value == '1' ? 'checked' : '') . " /><label for='cleantalk_use_ajax1'> " . __('Yes') . "</label>";
+    echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+    echo "<input type='radio' id='cleantalk_use_ajax0' name='cleantalk_settings[use_ajax]' value='0' " . ($value == '0' ? 'checked' : '') . " /><label for='cleantalk_use_ajax0'> " . __('No') . "</label>";
+    @admin_addDescriptionsFields(sprintf(__('', 'cleantalk'),  $ct_options['use_ajax']));
 }
 
 /**
@@ -503,6 +555,8 @@ input[type=submit] {padding: 10px; background: #3399FF; color: #fff; border:0 no
  */
 function admin_notice_message(){
     global $show_ct_notice_trial, $show_ct_notice_renew, $show_ct_notice_online, $show_ct_notice_autokey, $ct_notice_autokey_value, $ct_plugin_name, $ct_options, $ct_data;
+    
+    $ct_data=ct_get_data();
 
     $user_token = '';
     if (isset($ct_data['user_token']) && $ct_data['user_token'] != '') {
@@ -534,10 +588,29 @@ function admin_notice_message(){
         echo '<div class="error"><h3>' . sprintf(__("%s trial period ends, please upgrade to %s!", 'cleantalk'), "<a href=\"options-general.php?page=cleantalk\">$ct_plugin_name</a>", "<a href=\"http://cleantalk.org/my/bill/recharge?utm_source=wp-backend&utm_medium=cpc&utm_campaign=WP%20backend%20trial$user_token\" target=\"_blank\"><b>premium version</b></a>") . '</h3></div>';
         $show_notice = false;
     }
+    
+    if(isset($ct_data['next_notice_show']))
+    {
+    	$next_notice_show=$ct_data['next_notice_show'];
+    }
+    else
+    {
+    	$next_notice_show=0;
+    }
+    
+    $link=$_SERVER["QUERY_STRING"];
+    if($link!='')
+    {
+    	$link="?".$link."&close_notice=1";
+    }
+    else
+    {
+    	$link="?close_notice=1";
+    }
 
-    if ($show_notice && $show_ct_notice_renew && $value==1) {
+    if ($show_notice && $show_ct_notice_renew && $value==1 && time()>$next_notice_show) {
 	$button_html = "<a href=\"http://cleantalk.org/my/bill/recharge?utm_source=wp-backend&utm_medium=cpc&utm_campaign=WP%20backend%20renew$user_token\" target=\"_blank\">" . '<input type="button" class="button button-primary" value="' . __('RENEW ANTI-SPAM', 'cleantalk') . '"  />' . "</a>";
-        echo '<div class="updated"><h3>' . sprintf(__("Please renew your anti-spam license for %s.", 'cleantalk'), "<a href=\"http://cleantalk.org/my/bill/recharge?utm_source=wp-backend&utm_medium=cpc&utm_campaign=WP%20backend%20renew$user_token\" target=\"_blank\"><b>" . __('next year', 'cleantalk') ."</b></a>") . '<br /><br />' . $button_html . '</h3></div>';
+        echo '<div class="updated"><a href="'.$link.'" style="text-decoration:none;float:right;font-size:16px;margin-top:5px;"><b>X</b></a><h3>' . sprintf(__("Please renew your anti-spam license for %s.", 'cleantalk'), "<a href=\"http://cleantalk.org/my/bill/recharge?utm_source=wp-backend&utm_medium=cpc&utm_campaign=WP%20backend%20renew$user_token\" target=\"_blank\"><b>" . __('next year', 'cleantalk') ."</b></a>") . '<br /><br />' . $button_html . '</h3></div>';
         $show_notice = false;
     }
 

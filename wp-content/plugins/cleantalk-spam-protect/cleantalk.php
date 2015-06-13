@@ -3,11 +3,11 @@
   Plugin Name: Anti-spam by CleanTalk
   Plugin URI: http://cleantalk.org
   Description: Max power, all-in-one, captcha less, premium anti-spam plugin. No comment spam, no registration spam, no contact spam, protects any WordPress forms. 
-  Version: 5.6
+  Version: 5.13
   Author: СleanTalk <welcome@cleantalk.org>
   Author URI: http://cleantalk.org
  */
-$cleantalk_plugin_version='5.6';
+$cleantalk_plugin_version='5.13';
 $cleantalk_executed=false;
 
 if(!defined('CLEANTALK_PLUGIN_DIR')){
@@ -21,9 +21,30 @@ if(!defined('CLEANTALK_PLUGIN_DIR')){
     register_deactivation_hook( __FILE__, 'ct_deactivation' );
     add_action('admin_init', 'ct_plugin_redirect');
     
+    
 
     // After plugin loaded - to load locale as described in manual
     add_action( 'plugins_loaded', 'ct_plugin_loaded' );
+    
+    $ct_options=ct_get_options();
+    if(isset($ct_options['use_ajax']))
+    {
+    	$use_ajax = @intval($ct_options['use_ajax']);
+    }
+    else
+    {
+    	$use_ajax=1;
+    }
+    
+    if($use_ajax==1)
+    {
+		add_action('wp_loaded', 'ct_add_nocache_script', 1);
+		add_action('wp_footer', 'ct_add_nocache_script_footer', 1);
+		add_action('wp_head', 'ct_add_nocache_script_header', 1);
+	}
+    
+    add_action( 'wp_ajax_nopriv_ct_get_cookie', 'ct_get_cookie',1 );
+	add_action( 'wp_ajax_ct_get_cookie', 'ct_get_cookie',1 );
     
 
     if (is_admin())
@@ -131,6 +152,51 @@ function ct_add_event($event_type)
 	$cleantalk_executed=true;
 }
 
+/**
+ * return new cookie value
+ */
+function ct_get_cookie()
+{
+	global $ct_checkjs_def;
+	$ct_checkjs_key = ct_get_checkjs_value(true); 
+	print $ct_checkjs_key;
+	die();
+}
+
+/**
+ * adds nocache script
+ */
+function ct_add_nocache_script()
+{
+	ob_start('ct_inject_nocache_script');
+}
+
+function ct_add_nocache_script_footer()
+{
+	print "<script type='text/javascript' src='".plugins_url( '/cleantalk_nocache.js' , __FILE__ )."?random=".rand()."'></script>\n";
+}
+
+function ct_add_nocache_script_header()
+{
+	print "\n<script type='text/javascript'>\nvar ct_ajaxurl = '".admin_url('admin-ajax.php')."';\n</script>\n";
+}
+
+function ct_inject_nocache_script($html)
+{
+	if(!is_admin()&&stripos($html,"</body")!==false)
+	{
+		//$ct_replace.="\n<script type='text/javascript'>var ajaxurl = '".admin_url('admin-ajax.php')."';</script>\n";
+		$ct_replace="<script type='text/javascript' src='".plugins_url( '/cleantalk_nocache.js' , __FILE__ )."?random=".rand()."'></script>\n";
+		//$html=str_ireplace("</body",$ct_replace."</body",$html);
+		$html=substr_replace($html,$ct_replace."</body",strripos($html,"</body"),6);
+	}
+	if(!is_admin()&&preg_match("#<head[^>]*>#i",$html)==1)
+	{
+		$ct_replace="\n<script type='text/javascript'>\nvar ct_ajaxurl = '".admin_url('admin-ajax.php')."';\n</script>\n";
+		$html=preg_replace("(<head[^>]*>)","$0".$ct_replace,$html,1);
+	}
+	return $html;
+}
 
 require_once(CLEANTALK_PLUGIN_DIR . 'cleantalk-comments.php');
 
